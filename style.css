@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center; /* alinha os itens filhos horizontalmente ao centro da caixa */
+    background: #9928b6;
+}
+section .dots span{
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background: #fff;
+    border-radius: 50%;
+    transform: rotate(calc(var(--i)*(360deg / 15))) translateY(35px); 
+    /* translate move cada <span> para fora do centro em um raio de 35px, criando um efeito de círculo ao redor do centro */
+    /* rotate(calc(var(--i)*(360deg / 15))) gira cada <span> ao redor do centro da <div> com um ângulo calculado com base na variável --i, que varia de 1 a 15. Isso distribui os pontos de forma uniforme ao longo de 360 graus */
+    animation: animate 1.5s linear infinite;
+    animation-delay: calc(var(--i) * 0.1s);
+    opacity: 0;
+}
+@keyframes animate {
+    /* keyframe animate define a animação que altera a opacidade dos <span>. */
+ 0%{
+    opacity: 1;
+ }
+ 100%{
+    opacity: 0;
+ }
+}
