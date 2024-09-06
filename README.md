@@ -3,7 +3,7 @@
 Este projeto é uma animação de carregamento dinâmica desenvolvida com HTML e CSS. O objetivo é criar um efeito visual atrativo enquanto o conteúdo da página está carregando. A animação é composta por uma série de pontos que giram e piscam em torno de um centro.
 
 ## Demonstração 🎥
-Você pode visualizar a animação ao vivo [aqui](https://marstefany.github.io/Loading-Page-Animation/).
+Você pode visualizar a animação ao vivo [aqui](https://marstefany.github.io/Loading-Page/).
 
 ## Tecnologias Utilizadas 🚀
 - *HTML5*: Utilizado para estruturar o projeto e definir a marcação básica da animação.
